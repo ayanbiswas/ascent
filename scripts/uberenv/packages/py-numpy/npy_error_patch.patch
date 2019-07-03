@@ -1,0 +1,13 @@
+diff --git a/numpy/core/code_generators/generate_numpy_api.py b/core/code_generators/generate_numpy_api.py
+index b4aeaa2..521b634 100644
+---  a/numpy/core/code_generators/generate_numpy_api.py
++++  a/numpy/core/code_generators/generate_numpy_api.py
+@@ -50,7 +50,7 @@ _import_array(void)
+   PyObject *c_api = NULL;
+ 
+   if (numpy == NULL) {
+-      PyErr_SetString(PyExc_ImportError, "numpy.core.multiarray failed to import");
++      /*PyErr_SetString(PyExc_ImportError, "numpy.core.multiarray failed to import");*/
+       return -1;
+   }
+   c_api = PyObject_GetAttrString(numpy, "_ARRAY_API");
